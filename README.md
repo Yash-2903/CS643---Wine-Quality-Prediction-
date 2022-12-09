@@ -4,8 +4,10 @@ The purpose of this individual assignment is to learn how to develop parallel ma
 
 ## Link to the Code
 [Wine Quality Prediction Github Link](https://github.com/Yash-2903/CS643-Wine-Quality-Prediction)
+
 ## Link to container in DockerHub
 [Wine Quality Prediction Docker Link](https://hub.docker.com/repository/docker/yash290397/winequalityprediction)
+
 ## Step by Step Instruction on how to set AWS EMR Cluster
 
 1. How to create Spark cluster in AWS EMR cluster.
@@ -20,7 +22,7 @@ The purpose of this individual assignment is to learn how to develop parallel ma
 2. Create Key-pair security key for EMR cluster (.ppk). Download the .ppk file.
 3. Open Putty application on Windows. Login with IP address and Key-pair(.ppk).
 4. Open WinSCP application on Windows. Login with IP address and Key-pair(.ppk).
-5. Copy your ValidationDataset.csv, TrainingDataset.csv and winequalityprediction.jar file to WinSCP server path `/home/hadoop`.
+5. Copy your [ValidationDataset.csv](https://github.com/Yash-2903/CS643-Wine-Quality-Prediction/blob/main/ValidationDataset.csv), [TrainingDataset.csv](https://github.com/Yash-2903/CS643-Wine-Quality-Prediction/blob/main/TrainingDataset.csv) and winequalityprediction.jar file to WinSCP server path `/home/hadoop`.
 6. Run the following commands in Putty:-
    - Run command `hadoop fs -put * .` this will add you current file to server.
    - Run command `spark-submit --deploy-mode cluster --class com.applipred.WineQualityPrediction.ApplicationPredictionModel windqualityprediction.jar 
