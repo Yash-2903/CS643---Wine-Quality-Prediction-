@@ -1,6 +1,9 @@
 # CS643 Wine-Quality-Prediction
 ## Goal
-The purpose of this individual assignment is to learn how to develop parallel machine learning (ML) applications in Amazon AWS cloud platform. Specifically, you will learn: (1) how to use Apache Spark to train an ML model in parallel on multiple EC2 instances; (2) how to use Spark’s MLlib to develop and use an ML model in the cloud; (3) How to use Docker to create a container for your ML model to simplify model deployment.
+The purpose of this individual assignment is to learn how to develop parallel machine learning (ML) applications in Amazon AWS cloud platform. Specifically, you will learn:
+1. How to use Apache Spark to train an ML model in parallel on multiple EC2 instances.
+2. How to use Spark’s MLlib to develop and use an ML model in the cloud.
+3. How to use Docker to create a container for your ML model to simplify model deployment.
 
 ## Link to the Code
 [Wine Quality Prediction Github Link](https://github.com/Yash-2903/CS643-Wine-Quality-Prediction)
@@ -39,4 +42,4 @@ The purpose of this individual assignment is to learn how to develop parallel ma
    - Create Docker Image. Run command `docker pull yash290397/winequalityprediction`.
    - Place your Test data set csv file to the folder which is associate with docker container.
    - Run command `docker run -v {directory path for data set}:/code/data/csv yash290397/winequalityprediction {test data set csv name}`
-   - Exmaple :- `docker run -v /Users/mjpatel/Document/windqualityprediction/data/csv:/code/data/csv yash290397/winequalityprediction testdataset.csv`
+   - Exmaple :- `docker run -v /Users/mjpatel/Document/windqualityprediction/data/csv:/code/data/csv yash290397/winequalityprediction ValidationDataset.csv`
