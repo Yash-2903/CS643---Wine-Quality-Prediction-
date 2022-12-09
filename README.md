@@ -42,4 +42,4 @@ The purpose of this individual assignment is to learn how to develop parallel ma
    - Create Docker Image. Run command `docker pull yash290397/winequalityprediction`.
    - Place your Test data set csv file to the folder which is associate with docker container.
    - Run command `docker run -v {directory path for data set}:/code/data/csv yash290397/winequalityprediction {test data set csv name}`
-   - Exmaple :- `docker run -v /Users/mjpatel/Document/windqualityprediction/data/csv:/code/data/csv yash290397/winequalityprediction ValidationDataset.csv`
+   - Example :- `docker run -v /Users/mjpatel/Document/windqualityprediction/data/csv:/code/data/csv yash290397/winequalityprediction ValidationDataset.csv`
